@@ -1,0 +1,73 @@
+object fMain: TfMain
+  Left = 895
+  Height = 752
+  Top = 705
+  Width = 2003
+  BorderStyle = bsDialog
+  Caption = 'принтер:)'
+  ClientHeight = 752
+  ClientWidth = 2003
+  Color = clMoneyGreen
+  DesignTimePPI = 192
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 2003
+    Align = alTop
+    Color = clGrayText
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 642
+    Top = 110
+    Width = 2003
+    Align = alBottom
+    AlternateColor = 13622201
+    Color = clCream
+    ColRowDragIndicatorColor = clCream
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+  object addPelmeni: TSpeedButton
+    Left = 34
+    Height = 59
+    Top = 38
+    Width = 334
+    Caption = 'Добавить '
+    OnClick = addPelmeniClick
+  end
+  object bDel: TSpeedButton
+    Left = 734
+    Height = 59
+    Top = 38
+    Width = 334
+    Caption = 'Удалить '
+    OnClick = bDelClick
+  end
+  object bEdit: TSpeedButton
+    Left = 384
+    Height = 59
+    Top = 38
+    Width = 334
+    Caption = 'Редактировать '
+    OnClick = bEditClick
+  end
+  object bSort: TSpeedButton
+    Left = 1085
+    Height = 59
+    Top = 38
+    Width = 334
+    Caption = 'Сортировать список'
+    OnClick = bSortClick
+  end
+end
